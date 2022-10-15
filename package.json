@@ -1,0 +1,35 @@
+{
+	"name": "@gabortorma/logger",
+	"version": "0.1.0",
+	"main": "index.js",
+	"scripts": {
+		"test": "dotenv mocha tests/*",
+		"release": "dotenv release-it"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/GaborTorma/logger.git"
+	},
+	"keywords": [
+		"logger",
+		"winston",
+		"human-format"
+	],
+	"type": "module",
+	"author": "GáborTorma",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/GaborTorma/logger/issues"
+	},
+	"homepage": "https://github.com/GaborTorma/logger#readme",
+	"devDependencies": {
+		"chai": "^4.3.6",
+		"dotenv-cli": "^6.0.0",
+		"mocha": "^10.0.0",
+		"release-it": "^15.5.0"
+	},
+	"dependencies": {
+		"lodash": "^4.17.21",
+		"winston": "^3.8.2"
+	}
+}

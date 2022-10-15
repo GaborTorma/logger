@@ -1,0 +1,18 @@
+import '../global.js';
+import chai from 'chai';
+
+const expect = chai.expect;
+
+describe('Logger Ł global access', function () {
+	it('should be true', function (done) {
+		expect(!!Ł).to.be.true;
+		done();
+	});
+});
+
+describe('Logger $l global access', function () {
+	it('should be true', function (done) {
+		expect(!!$l).to.be.true;
+		done();
+	});
+});
