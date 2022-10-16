@@ -28,7 +28,6 @@
 		"winston": "^3.8.2"
 	},
 	"devDependencies": {
-		"@babel/eslint-parser": "^7.19.1",
 		"chai": "^4.3.6",
 		"dotenv-cli": "^6.0.0",
 		"eslint": "^8.25.0",

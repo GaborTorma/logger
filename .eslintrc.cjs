@@ -5,12 +5,8 @@ module.exports = {
 		mocha: true,
 	},
 	parserOptions: {
-		parser: '@babel/eslint-parser',
 		sourceType: 'module',
-		ecmaVersion: '2022',
-		ecmaFeatures: {
-			experimentalObjectRestSpread: true,
-		},
+		ecmaVersion: 'latest',
 	},
 	extends: [
 		'eslint:recommended',
