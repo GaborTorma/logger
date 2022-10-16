@@ -1,7 +1,7 @@
-import Ł from './index.js';
+import Ł from './index.js'
 
-global.Ł = Ł;
+global.Ł = Ł
 
-global.$l = Ł;
+global.$l = Ł
 
-export default Ł;
+export default Ł
