@@ -1,6 +1,8 @@
 import Ł from '../index.js'
 import { expect } from 'chai'
 
+Ł.profile('test')
+
 Ł.s('Logging initialized no meta')
 Ł.s('Logging initialized', 'silly', 4, 11)
 Ł.d('Debug an object', { make: 'Ford', model: 'Mustang', year: 1969 })
@@ -9,6 +11,7 @@ import { expect } from 'chai'
 Ł.h('Http', [
 	{ options: ['Lorem ipsum', 'dolor sit amet'] },
 	{ values: ['Donec augue eros, ultrices.'] },
+	{ values: ['Donec augue eros, ultrices. Donec augue eros, ultrices. Donec augue eros, ultrices. Donec augue eros, ultrices. Donec augue eros, ultrices. Donec augue eros, ultrices.'] },
 ])
 Ł.w('Warning', { node: 'data' })
 Ł.e(new Error('Unexpected error'))
@@ -24,3 +27,5 @@ describe('Logger console', function () {
 		done()
 	})
 })
+
+Ł.profile('test')
