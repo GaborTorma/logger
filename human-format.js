@@ -60,22 +60,22 @@ export class ConsoleFormat {
 
 		let timestamp = ''
 		if (this.opts.showTimestamp && info.timestamp) {
-			const date = new Date(info.timestamp)
-			const year = date.getFullYear()
-			const month = String(date.getMonth()).padStart(2, '0')
-			const day = String(date.getDate()).padStart(2, '0')
-			const hours = String(date.getHours()).padStart(2, '0')
-			const min = String(date.getMinutes()).padStart(2, '0')
-			const sec = String(date.getSeconds()).padStart(2, '0')
-			const ms = String(date.getMilliseconds()).padStart(3, '0')
-			const time = `${hours}:${min}:${sec}.${ms}`
-			timestamp = this.opts.showTimestamp?.onlyTime
-				? time
-				: `${year}-${month}-${day} ${time}`
-		}
+				const date = new Date(info.timestamp)
+				const year = date.getFullYear()
+				const month = String(date.getMonth()).padStart(2, '0')
+				const day = String(date.getDate()).padStart(2, '0')
+				const hours = String(date.getHours()).padStart(2, '0')
+				const min = String(date.getMinutes()).padStart(2, '0')
+				const sec = String(date.getSeconds()).padStart(2, '0')
+				const ms = String(date.getMilliseconds()).padStart(3, '0')
+				const time = `${hours}:${min}:${sec}.${ms}`
+				timestamp = this.opts.showTimestamp?.onlyTime
+					? time
+					: `${year}-${month}-${day} ${time}`
 
-		if (!this.opts.showTimestamp?.right) {
-			message += `[${timestamp}] `
+			if (this.opts.showTimestamp?.right !== true) {
+				message += `[${timestamp}] `
+			}
 		}
 
 		message += info.message.replace(

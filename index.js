@@ -38,8 +38,8 @@ const consoleLogger = new winston.transports.Console({
 		winston.format.colorize({ all: true, colors }),
 		humanFormat({
 			showMeta: true,
-			showTimestamp: {
-				onlyTime: !isProd,
+			showTimestamp: isProd ? false : {
+				onlyTime: true,
 				right: true,
 			},
 			colors: true,
