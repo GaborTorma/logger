@@ -10,7 +10,7 @@ module.exports = {
 	},
 	extends: [
 		'eslint:recommended',
-		'plugin:prettier/recommended',
+		// 'plugin:prettier/recommended',
 		'plugin:mocha/recommended',
 		'plugin:chai-friendly/recommended',
 	],

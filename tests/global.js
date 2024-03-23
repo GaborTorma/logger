@@ -1,7 +1,5 @@
 import '../global.js'
-import chai from 'chai'
-
-const expect = chai.expect
+import { expect } from 'chai'
 
 describe('Logger global access', function () {
 	describe('Ł global access', function () {
@@ -10,6 +8,7 @@ describe('Logger global access', function () {
 			done()
 		})
 	})
+
 	describe('$l global access', function () {
 		it('should be true', function (done) {
 			expect(!!$l).to.be.true

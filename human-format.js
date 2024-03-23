@@ -36,13 +36,13 @@ export class ConsoleFormat {
 					startLine: '',
 					line: '',
 					endLine: '',
-			  }
+				}
 			: {
 					singleLine: '▪',
 					startLine: '┏',
 					line: '┃',
 					endLine: '┗',
-			  }
+				}
 		this.reset = this.opts.ignoreSpecialChars ? ' ' : colors.reset(' ')
 		this.dim = this.opts.colors ? colors.dim : (v) => v
 	}
@@ -93,7 +93,7 @@ export class ConsoleFormat {
 							colors: false,
 							breakLength: Infinity,
 						})
-				  )
+					)
 				: 0,
 			message: size(message),
 			ms: size(info.ms),

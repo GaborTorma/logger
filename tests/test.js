@@ -1,7 +1,5 @@
 import Ł from '../index.js'
-import chai from 'chai'
-
-const expect = chai.expect
+import { expect } from 'chai'
 
 Ł.s('Logging initialized no meta')
 Ł.s('Logging initialized', 'silly', 4, 11)
